@@ -16,5 +16,10 @@ app.use(express.static(__dirname + "/public"));
 app.get('/',(req,res)=> {
     res.sendFile(__dirname + "/index.html");
 })
-
+app.post('/json',(req,res)=>{  
+    res.send(req.body);
+})
+app.post('/contact',(req,res)=>{  
+    res.send(req.body);
+})
 app.listen(3000,()=> console.log("listening on port 3k"));
