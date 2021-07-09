@@ -1,0 +1,172 @@
+.footer {
+    line-height: 1.5;
+    background-color: navy;
+    .map-direction {
+        padding: 2rem 0;
+        text-align: center;
+        width: 100%;
+
+    }
+
+}
+.footer_content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color:navy;
+    padding: 2rem 0;
+    background-color: gold;
+}
+.footer_service_list,.footer_pledge,.footer_address {
+ padding: 0 2rem;
+}
+.footer_service_list{
+    h2 {
+        font-size: 24px;
+        text-transform: capitalize;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+    li {
+        padding: 1rem 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    a {
+        text-decoration: none;
+        color: navy;
+        font-weight: bold;
+    }
+}
+
+.footer_address {
+    text-transform: capitalize;
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h3{
+        font-weight: 800;
+        font-size: 20px;
+    }
+    p{
+        padding: 2rem 0;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color: navy;
+    }
+    h4{
+        font-weight: 800;
+        font-size: 20px;  
+    }
+    i {
+        margin-right: 0.5rem;
+    }
+}
+.footer_pledge {
+    background-color:navy;
+    color: gold;
+    a {
+        display: grid;
+        justify-content: center;
+    }
+    img {
+        height: 5rem;
+    }
+    h2,p {
+        display: grid;
+        justify-content: center;
+        font-weight: bolder;
+    }
+    p{  
+        text-transform: capitalize;
+        padding: 2rem 0;
+        text-align: center;
+    }
+}
+.footer_tail {
+    background-color: gold;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    color: navy;
+    .copy {
+
+        display: block;
+        text-align: center;
+    }
+    a {
+        margin-left:5px;
+        text-decoration: none;
+        color: navy;
+        font-weight: bolder;
+        &:hover {
+            color:brown;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    }
+    .developer_name{
+        padding: 0.2rem 0;
+    }
+    .fa-envelope {
+        padding-right: 0.5rem;
+    }
+}
+
+
+@media all and (max-width:768px) {
+    .footer_content{
+        grid-template-columns: 1fr;
+    }
+    .map-direction {
+        padding: 0 !important;
+        width: 100%;
+    }
+    .footer_address {
+        h2{
+            margin-top: 2rem;
+        }
+    }
+    .footer_pledge {
+        padding-top: 2rem;
+    }
+    .footer_service_list {
+        padding-bottom: 2rem;
+        justify-self: center;
+    }
+    .footer_tail {
+        background-color: navy;
+        color:gold;
+        margin: 0;
+        a {
+            color: gold;
+        }
+    }
+}
+
+@media all and (max-width:1024px) and (min-width: 770px) {
+    .footer {
+        line-height: 1.5;
+        .container {
+            padding: 0 2rem;
+        }
+        
+    }
+}
+
+@media all and (width:768px) {
+    .footer_address {
+        justify-self: center;
+    }
+}
+
+@media all and (min-width: 770px) and (max-width: 1024px) {
+    .footer_pledge {
+        font-size: 1.2rem;
+        text-align: center;
+        
+    }
+}

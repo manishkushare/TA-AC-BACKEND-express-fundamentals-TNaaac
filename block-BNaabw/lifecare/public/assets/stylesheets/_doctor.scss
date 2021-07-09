@@ -1,0 +1,212 @@
+.doctor {
+  background-color: gold;
+  padding: 7rem 0 4rem 0;
+  color: black;
+}
+.doctor-legend {
+  display: grid;
+  justify-content: center;
+  color: navy;
+  img {
+    height: 200px;
+    justify-self: center;
+    box-shadow: 10px 5px 11px 0px rgba(27, 35, 110, 0.849);
+    border-radius: 40%;
+
+  }
+  h2 {
+    padding-top: 2rem;
+    border-bottom: 2.5px solid navy;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    justify-self: center;
+  }
+  p {
+    font-weight: 600;
+    padding: 2rem 0;
+    font-size: 1.25rem;
+  }
+}
+
+.doctor-portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 25px 25px 25px 25px;
+  padding: 1.5rem;
+  background-color: navy;
+  color: gold;
+
+  .doctor-info {
+    align-self: center;
+    display: grid;
+    padding: 0 2rem;
+    p {
+      padding: 2rem 0;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+    button {
+      justify-self: center;
+      border-radius: 1rem;
+      border: none;
+      padding: 0.5rem 3rem;
+      background-color: yellow;
+      justify-content: center;
+      text-transform: capitalize;
+      cursor: pointer;
+      outline: 0;
+      a {
+        color: navy;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+    
+  }
+}
+.doctor-portfolio {
+  .doctor-info {
+    ul {
+      padding: 1rem 0;
+    }
+    h3 {
+      text-align: center;
+      padding-top: 2rem;
+    }
+    a {
+      color: gold;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}
+
+.doctor-image {
+  img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 11px 0px rgba(221, 240, 48, 0.849);
+
+  }
+  h2,
+  h3,
+  h4 {
+    font-weight: 600;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 1.2rem;
+  }
+}
+.assistant-doctor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  padding: 2rem 0;
+}
+.assistant-doctor-col1,
+.assistant-doctor-col2 {
+  box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
+  background-color: navy;
+  color: gold;
+  padding:  2rem;
+  border-radius: 25px;
+  .assistant-doctor-portfolio {
+    padding: 1rem 0;
+  }
+  .assistant-doctor-image {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    img {
+      border-radius: 25px 25px 25px 25px;
+      box-shadow: 5px 5px 11px 0px rgba(221, 240, 48, 0.849);
+
+      width: 200px;
+      height: 250px;
+      text-align: center;
+    }
+
+  }
+  .assistant-doctor-portfolio {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul {
+      font-weight: 600;
+      text-align: center;
+    }
+    h2 {
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+  }
+}
+.doctor {
+  .staff-member {
+    padding: 0 2rem;
+
+    img {
+      border-radius: 25px 25px 25px 25px;
+      box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.75);
+      width: 100%;
+    }
+    h2 {
+      font-weight: 800;
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 2rem;
+      color: navy;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .doctor-portfolio {
+    grid-template-columns: 1fr !important;
+  }
+  .doctor {
+    .container {
+      padding: 1rem 1.5rem;
+    }
+    .staff-member {
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+  .doctor-info {
+    padding: 0 !important;
+  }
+  .assistant-doctor {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 770px) and (max-width: 1024px) {
+  .doctor {
+    .container {
+      padding: 4rem 2rem;
+    }
+  }
+}
+
+@media all and (width: 768px) {
+  .doctor-portfolio {
+      grid-template-columns: repeat(2,1fr) !important;
+      .doctor-info {
+        padding: 0 2rem !important;
+      }
+  }
+  .assistant-doctor-col1,
+  .assistant-doctor-col2 {
+    width: 70%;
+    justify-self: center;
+  }
+}
