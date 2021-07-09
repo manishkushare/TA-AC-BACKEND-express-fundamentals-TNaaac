@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.margin-top {
+  margin-top: 4rem;
+}
+
+// TREATMENT METHODS ON HOME PAGE AND ABOUT PAGE
+.treatment_methods {
+    // display: none;
+    background-color: navy;
+    color: gold;
+    h2 {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+        font-size: 600;
+    }
+    .btn {
+        padding-bottom: 2rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        background-color: gold;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        cursor: pointer;
+        text-transform: capitalize;
+        outline: none;
+        color: green;
+        font-weight: 600;
+        a {
+            text-decoration: none;
+            color: navy;
+        }
+     }
+    ul {
+        padding: 2rem 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      li {
+        font-size: 1rem;
+        display: flex;
+        flex-basis: 100%;
+        i {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        p {
+            text-transform: uppercase;
+        }
+      }
+    }
+    .fa-thumbs-up {
+    margin-right: 10px;
+  }
+}
+button {
+  border: 0;
+}
+
+@media all and (max-width: 768px) {
+  .treatment_methods {
+    .container {
+      padding: 0 2rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    ul {
+      padding: 2rem 0;
+      grid-template-columns: repeat(2, 1fr);
+      li {
+        font-size: 1rem;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 770px) and (max-width: 1024px) {
+  .service_page,
+  .contact {
+    .header {
+      .menu-list {
+        top: 0;
+      }
+    }
+  }
+}

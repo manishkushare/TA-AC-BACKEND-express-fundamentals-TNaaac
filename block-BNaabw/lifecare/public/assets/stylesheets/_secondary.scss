@@ -1,0 +1,51 @@
+.secondary {
+    background: navy;
+    color: gold;
+   .secondary-content {
+       padding: 4rem 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    flex-direction: column;
+       h2 {
+           font-size: 1.5rem;
+           text-align: center;
+           font-weight: 600;
+           margin-bottom: 2rem;
+
+       }
+       button {
+           padding: 1rem 2rem;
+           border-radius: 10px;
+           background-color: gold;
+           box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+           cursor: pointer;
+           text-transform: capitalize;
+           outline: none;
+           color: green;
+           font-weight: 600;
+           a {
+               text-decoration: none;
+               color: navy;
+           }
+        }
+   }
+
+}
+
+@media all and (max-width: 768px) {
+    .secondary {
+        .container {
+            margin: 0 2rem;
+        }
+        .secondary-content{
+            h2 {
+                font-size: 1.2rem;
+            }
+            a {
+                font-size: 1rem;
+            }
+        }
+        
+    }
+}

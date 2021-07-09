@@ -1,0 +1,218 @@
+.nav-menu {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        align-items: center;
+        li{
+            margin-left: 1.5rem;
+            text-transform: capitalize;
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                font-size: 1.15rem;
+            }
+        }
+    }
+}
+.header {
+    z-index: 1;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: gold;
+    img{
+        height: 3rem;
+    }
+}
+
+.active a{
+    color: navy !important;
+    font-weight: 800 !important;
+}
+.toggle,.bars,.close-menu {
+    display: none;
+}
+
+// dropdown menu
+.fa-chevron-circle-down {
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.menu-list {
+    .dropdown {
+        position: relative;
+        &:hover .sub-menu-list-box {
+            display: block;
+        }
+    }
+    .sub-menu-list-box {
+        position: absolute;
+        display: none;
+        padding: 32px 10px 0px 65px;
+        left: 133%;
+        transform: translateX(-115px);  
+    }
+    .sub-menu-list {
+        display: flex;
+        flex-direction: column;
+        background-color: navy;
+        border-radius: 20px;
+        box-shadow: 10px 10px 11px 0px rgba(0,0,0,0.75);
+        padding: 10px 20px;
+    }
+}
+.menu-list {
+    .sub-menu-items {
+        margin-left: 0 !important;
+        padding: 5px 0;
+        a {
+            color: gold !important;
+            font-size: 1rem;
+            line-height: 1.2;
+            &:hover {
+                color: red !important;
+            }
+        }
+
+    }
+}
+.mobile_header_version {
+    display: none ;
+}
+
+@media all and (max-width: 768px) {
+    
+    .nav-menu {
+        padding: 2rem;
+        position: relative;
+
+
+        ul{
+            display: none;
+        }
+    }
+    .bars {
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+    }
+    .menu-list {
+        background-color: navy;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        color: gold;
+        li {
+            padding: 2rem;
+            a {
+                color: gold !important;
+            }
+        }
+        
+    }
+    .dropdown:hover > .sub-menu-list-box{
+        display: block;
+        left: 120px;
+        right: 0;
+        padding: 0;
+        transform: translateX(-62px);
+        .sub-menu-list {
+            background-color: gold;
+            .sub-menu-items {
+                a{
+                    color: navy !important;
+                }
+            }
+        }
+    }
+
+
+    .close-menu {
+        z-index: 2;
+        font-size: 2rem;
+    }
+
+}
+
+@media all and (max-width:1024px) and (min-width: 769px) {
+    .header {
+        .container {
+            padding: 2rem;
+        }
+        .menu-list {
+           a{
+               font-size: 2.5rem;
+               
+           }
+        }
+    }
+    .nav-menu {
+        padding: 2rem;
+        position: relative;
+        top: 0;
+        // right: -14px
+        ul{
+            display: none;
+            padding-top: 30px;
+        }
+    }
+    .bars {
+        display: flex;
+        align-items: center;
+        font-size: 3rem;
+    }
+    .menu-list {
+        background-color: navy;
+        height: 100vh;
+        position: absolute;
+        top: -30px;
+        left: -44px;
+        right: -44px;
+        text-align: center;
+        li {
+            padding: 4rem 2rem;;
+            a {
+                color: gold !important;
+
+            }
+        }
+    }
+    .close-menu {
+        z-index: 2;
+        font-size: 2rem;
+    }
+    .dropdown:hover > .sub-menu-list-box{
+        display: block;
+        left: 120px;
+        right: 0;
+        padding: 0;
+        transform: translateX(-69px);  
+        .sub-menu-list {
+            background-color: gold;
+            .sub-menu-items {
+                a{
+                    color: navy !important;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media all and (width: 768px) {
+    .menu-list {
+        a{
+            font-size: 2.5rem !important;
+            
+        }
+     }
+}

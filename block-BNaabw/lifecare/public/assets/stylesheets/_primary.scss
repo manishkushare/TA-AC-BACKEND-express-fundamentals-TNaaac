@@ -1,0 +1,107 @@
+.primary {
+    // background-color: navy;
+    background-color: navy;
+    .primary-legend {
+        display: grid;
+        justify-content: center;
+        padding: 4rem 0;
+        color: white;
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;  
+            border-bottom: 5px solid yellow;
+
+            text-transform: capitalize;
+            justify-self: center;
+            padding-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding-top: 2rem;
+
+        }
+        span {
+            color: gold;
+            font-weight: bolder;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.features {
+    padding-bottom: 4rem;
+    color: gold;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    img {
+        height: 200px;
+        border-radius: 40%;
+        box-shadow: 5px 5px 11px 0px rgba(221, 240, 48, 0.849);
+
+    }
+    .calender,.treatment,.specialist,.facility {
+        justify-self: center;
+        h2 {
+            padding: 2rem 0;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            justify-self: center;
+            font-weight: 700;
+        }
+    }
+}
+.primary {
+    .primary-banner {
+        width: 100%;
+        margin-top: 4rem;
+        box-shadow: 5px 5px 11px 0px rgba(221, 240, 48, 0.849);
+
+        border-radius: 25px 25px 25px 25px;
+    }
+    
+}
+
+
+
+@media all and (max-width:768px) {
+    .primary {
+        .container {
+            padding: 0 2rem;
+        }
+    }
+    .features {
+        grid-template-columns: 1fr;
+    }
+   
+    .calender,.treatment,.specialist,.facility{
+        display: grid;
+        justify-items: center;
+        h2 {
+            font-size: 1.15rem !important;
+        }
+    }
+    .primary {
+        .primary-banner {
+            width: 100%;
+        }
+        
+    }
+}
+
+@media all and (max-width:1024px) and (min-width: 770px) {
+    .primary {
+        .primary-legend,.features {
+            padding-left:2rem !important;
+            padding-right: 2rem !important;
+        }
+        
+    }
+}
+
+@media all and (width:768px) {
+    .features {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
