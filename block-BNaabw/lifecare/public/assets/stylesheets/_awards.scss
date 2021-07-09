@@ -1,0 +1,25 @@
+.awards {
+    .award_banner {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 4rem 0;
+
+        // background-color: gold;
+        background-color: gold;
+        .award_col1,.award_col2 {
+            display: flex;
+            justify-content: center;
+            padding: 0 1rem;
+            color: navy;
+            i {
+                font-size: 2rem;
+
+            }
+            .award_title {
+                margin-left: 10px;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
